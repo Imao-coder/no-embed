@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>no Video Embed</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page to test lazy loading of video embeds.">
+    <title>No Video Embed</title>
     <style>
         .video-container {
             position: relative;
@@ -12,6 +15,7 @@
         .thumbnail {
             width: 100%;
             cursor: pointer;
+            height: auto;
         }
         .play-button {
             position: absolute;
@@ -35,7 +39,7 @@
 <body>
     <h1>No Video Embed Test</h1>
     <div>
-        <img src="thumbnail.jpg" alt="Video Thumbnail" class="thumbnail" id="video-thumbnail" loading="lazy">
+        <img src="thumbnail.webp" alt="Video Thumbnail" class="thumbnail" id="video-thumbnail" loading="lazy">
     </div>
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ?si=O8Djk0thHJH59y-d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
